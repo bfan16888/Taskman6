@@ -9,4 +9,4 @@
 
 ## build and run docker image
 >docker build -t codeturtle/taskman6 .
->docker run -d - p 8080:80 codeturtle/taskman6
+>docker run -d -p 8080:80 codeturtle/taskman6
