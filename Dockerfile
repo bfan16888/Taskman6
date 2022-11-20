@@ -12,6 +12,6 @@ RUN dotnet publish -c Release -o out
 FROM mcr.microsoft.com/dotnet/aspnet:6.0
 WORKDIR /App
 COPY --from=build-env /App/out .
-ENTRYPOINT [ "dotnet", "Taskman6.dll" ]
+ENTRYPOINT [ "dotnet", "Taskman.dll" ]
 # To deploy to Heroku, use the CMD line and comment out ENTRYPOINT
 # CMD ASPNETCORE_URLS=http://*:$PORT dotnet Taskman6.dll
